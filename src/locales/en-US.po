@@ -1499,7 +1499,6 @@ msgid "NFT Collections"
 msgstr "NFT Collections"
 
 #: src/components/AccountDrawer/MiniPortfolio/index.tsx
-#: src/components/NavBar/index.tsx
 msgid "NFTs"
 msgstr "NFTs"
 
@@ -2560,7 +2559,6 @@ msgstr "Token stats and charts for {label} are available on <0>info.uniswap.org<
 
 #: src/components/AccountDrawer/MiniPortfolio/index.tsx
 #: src/components/NavBar/SearchBarDropdown.tsx
-#: src/components/NavBar/index.tsx
 msgid "Tokens"
 msgstr "Tokens"
 
