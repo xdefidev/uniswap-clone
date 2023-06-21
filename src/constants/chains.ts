@@ -28,24 +28,24 @@ export enum SupportedChainId {
 
 export const UniWalletSupportedChains = [
   SupportedChainId.MAINNET,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.POLYGON,
+  // SupportedChainId.ARBITRUM_ONE,
+  // SupportedChainId.OPTIMISM,
+  // SupportedChainId.POLYGON,
 ];
 
 export const CHAIN_IDS_TO_NAMES = {
   [SupportedChainId.MAINNET]: "mainnet",
-  [SupportedChainId.GOERLI]: "goerli",
-  [SupportedChainId.SEPOLIA]: "sepolia",
-  [SupportedChainId.POLYGON]: "polygon",
-  [SupportedChainId.POLYGON_MUMBAI]: "polygon_mumbai",
-  [SupportedChainId.CELO]: "celo",
-  [SupportedChainId.CELO_ALFAJORES]: "celo_alfajores",
-  [SupportedChainId.ARBITRUM_ONE]: "arbitrum",
-  [SupportedChainId.ARBITRUM_GOERLI]: "arbitrum_goerli",
-  [SupportedChainId.OPTIMISM]: "optimism",
-  [SupportedChainId.OPTIMISM_GOERLI]: "optimism_goerli",
-  [SupportedChainId.BNB]: "bnb",
+  // [SupportedChainId.GOERLI]: "goerli",
+  // [SupportedChainId.SEPOLIA]: "sepolia",
+  // [SupportedChainId.POLYGON]: "polygon",
+  // [SupportedChainId.POLYGON_MUMBAI]: "polygon_mumbai",
+  // [SupportedChainId.CELO]: "celo",
+  // [SupportedChainId.CELO_ALFAJORES]: "celo_alfajores",
+  // [SupportedChainId.ARBITRUM_ONE]: "arbitrum",
+  // [SupportedChainId.ARBITRUM_GOERLI]: "arbitrum_goerli",
+  // [SupportedChainId.OPTIMISM]: "optimism",
+  // [SupportedChainId.OPTIMISM_GOERLI]: "optimism_goerli",
+  // [SupportedChainId.BNB]: "bnb",
 };
 
 /**
@@ -63,30 +63,30 @@ export function isSupportedChain(
 
 export const SUPPORTED_GAS_ESTIMATE_CHAIN_IDS = [
   SupportedChainId.MAINNET,
-  SupportedChainId.POLYGON,
-  SupportedChainId.CELO,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.BNB,
+  // SupportedChainId.POLYGON,
+  // SupportedChainId.CELO,
+  // SupportedChainId.OPTIMISM,
+  // SupportedChainId.ARBITRUM_ONE,
+  // SupportedChainId.BNB,
 ] as const;
 
 /**
  * Unsupported networks for V2 pool behavior.
  */
 export const UNSUPPORTED_V2POOL_CHAIN_IDS = [
-  SupportedChainId.POLYGON,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.BNB,
-  SupportedChainId.ARBITRUM_GOERLI,
+  // SupportedChainId.POLYGON,
+  // SupportedChainId.OPTIMISM,
+  // SupportedChainId.ARBITRUM_ONE,
+  // SupportedChainId.BNB,
+  // SupportedChainId.ARBITRUM_GOERLI,
 ] as const;
 
 export const TESTNET_CHAIN_IDS = [
-  SupportedChainId.GOERLI,
-  SupportedChainId.SEPOLIA,
-  SupportedChainId.POLYGON_MUMBAI,
-  SupportedChainId.ARBITRUM_GOERLI,
-  SupportedChainId.OPTIMISM_GOERLI,
+  // SupportedChainId.GOERLI,
+  // SupportedChainId.SEPOLIA,
+  // SupportedChainId.POLYGON_MUMBAI,
+  // SupportedChainId.ARBITRUM_GOERLI,
+  // SupportedChainId.OPTIMISM_GOERLI,
 ] as const;
 
 export type SupportedTestnetChainId = typeof TESTNET_CHAIN_IDS[number];
@@ -96,13 +96,13 @@ export type SupportedTestnetChainId = typeof TESTNET_CHAIN_IDS[number];
  */
 export const L1_CHAIN_IDS = [
   SupportedChainId.MAINNET,
-  SupportedChainId.GOERLI,
-  SupportedChainId.SEPOLIA,
-  SupportedChainId.POLYGON,
-  SupportedChainId.POLYGON_MUMBAI,
-  SupportedChainId.CELO,
-  SupportedChainId.CELO_ALFAJORES,
-  SupportedChainId.BNB,
+  // SupportedChainId.GOERLI,
+  // SupportedChainId.SEPOLIA,
+  // SupportedChainId.POLYGON,
+  // SupportedChainId.POLYGON_MUMBAI,
+  // SupportedChainId.CELO,
+  // SupportedChainId.CELO_ALFAJORES,
+  // SupportedChainId.BNB,
 ] as const;
 
 export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number];
@@ -112,19 +112,19 @@ export type SupportedL1ChainId = typeof L1_CHAIN_IDS[number];
  * The expectation is that all of these networks have immediate transaction confirmation.
  */
 export const L2_CHAIN_IDS = [
-  SupportedChainId.ARBITRUM_ONE,
-  SupportedChainId.ARBITRUM_GOERLI,
-  SupportedChainId.OPTIMISM,
-  SupportedChainId.OPTIMISM_GOERLI,
+  // SupportedChainId.ARBITRUM_ONE,
+  // SupportedChainId.ARBITRUM_GOERLI,
+  // SupportedChainId.OPTIMISM,
+  // SupportedChainId.OPTIMISM_GOERLI,
 ] as const;
 
 export type SupportedL2ChainId = typeof L2_CHAIN_IDS[number];
 
-export function isPolygonChain(
-  chainId: number
-): chainId is SupportedChainId.POLYGON | SupportedChainId.POLYGON_MUMBAI {
-  return (
-    chainId === SupportedChainId.POLYGON ||
-    chainId === SupportedChainId.POLYGON_MUMBAI
-  );
-}
+// export function isPolygonChain(
+//   chainId: number
+// ): chainId is SupportedChainId.POLYGON | SupportedChainId.POLYGON_MUMBAI {
+//   return (
+//     chainId === SupportedChainId.POLYGON ||
+//     chainId === SupportedChainId.POLYGON_MUMBAI
+//   );
+// }
