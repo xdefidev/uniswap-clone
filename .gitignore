@@ -1,3 +1,6 @@
 node_modules
+<<<<<<< HEAD
 .env.production
 .env
+=======
+>>>>>>> 70ce2db (ch)
