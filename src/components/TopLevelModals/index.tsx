@@ -28,7 +28,7 @@ export default function TopLevelModals() {
       <ConnectedAccountBlocked account={account} isOpen={accountBlocked} />
       <Bag />
       <UniwalletModal />
-      <UniswapWalletBanner />
+      {/* <UniswapWalletBanner /> */}
       <TransactionCompleteModal />
       <AirdropModal />
       <FiatOnrampModal />
