@@ -64,7 +64,7 @@ export const PageTabs = () => {
 
   return (
     <>
-      <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
+      <MenuItem href="/swap?outputCurrency=0xff8C479134A18918059493243943150776cF8CF2" isActive={pathname.startsWith('/swap')}>
         <Trans>Swap</Trans>
       </MenuItem>
       {/* <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
@@ -85,6 +85,9 @@ export const PageTabs = () => {
         </MenuItem> */}
       <MenuItem href="/" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Stake</Trans>
+      </MenuItem>
+      <MenuItem href="/" dataTestId="pool-nav-link" isActive={false} >
+        <Trans>Farm</Trans>
       </MenuItem>
       {/* <Box marginY={{ sm: '4', md: 'unset' }}>
         <MenuDropdown />
