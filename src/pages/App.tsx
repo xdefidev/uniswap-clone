@@ -148,8 +148,8 @@ export default function App() {
     sendAnalyticsEvent(SharedEventName.APP_LOADED, pageLoadProperties)
     const sendWebVital =
       (metric: string) =>
-      ({ delta }: Metric) =>
-        sendAnalyticsEvent(SharedEventName.WEB_VITALS, { ...pageLoadProperties, [metric]: delta })
+        ({ delta }: Metric) =>
+          sendAnalyticsEvent(SharedEventName.WEB_VITALS, { ...pageLoadProperties, [metric]: delta })
     getCLS(sendWebVital('cumulative_layout_shift'))
     getFCP(sendWebVital('first_contentful_paint_ms'))
     getFID(sendWebVital('first_input_delay_ms'))
@@ -204,7 +204,7 @@ export default function App() {
             <Suspense fallback={<Loader />}>
               {isLoaded ? (
                 <Routes>
-                  <Route path="/" element={<Landing />} />
+                  <Route path="/" element={<Swap />} />
 
                   <Route path="tokens" element={<Tokens />}>
                     <Route path=":chainName" />
