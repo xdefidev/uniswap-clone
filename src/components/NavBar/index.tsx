@@ -64,7 +64,7 @@ export const PageTabs = () => {
 
   return (
     <>
-      <MenuItem href="/swap?outputCurrency=0xff8C479134A18918059493243943150776cF8CF2" isActive={pathname.startsWith('/swap')}>
+      <MenuItem href="/swap" isActive={pathname.startsWith('/swap')}>
         <Trans>Swap</Trans>
       </MenuItem>
       {/* <MenuItem href={`/tokens/${chainName.toLowerCase()}`} isActive={pathname.startsWith('/tokens')}>
@@ -109,18 +109,21 @@ const Navbar = ({ blur }: { blur: boolean }) => {
         <Box display="flex" height="full" flexWrap="nowrap">
           <Box className={styles.leftSideContainer}>
             <Box className={styles.logoContainer}>
-              <UniIcon
-                width="48"
-                height="48"
-                data-testid="uniswap-logo"
-                className={styles.logo}
-                onClick={() => {
-                  navigate({
-                    pathname: '/',
-                    search: '?intro=true',
-                  })
-                }}
-              />
+              <a href="https://renq.io" target="_blank" >
+                <UniIcon
+                  width="48"
+                  height="48"
+                  data-testid="uniswap-logo"
+                  className={styles.logo}
+                // onClick={() => {
+                //   navigate({
+                //     pathname: '/',
+                //     search: '?intro=true',
+                //   })
+                // }}
+                />
+              </a>
+
               {/* Renq Logo */}
             </Box>
             {!isNftPage && (
@@ -148,7 +151,7 @@ const Navbar = ({ blur }: { blur: boolean }) => {
               {isNftPage && sellPageState !== ProfilePageStateType.LISTING && <Bag />}
               {!isNftPage && (
                 <Box display={{ sm: 'none', lg: 'flex' }}>
-                  <ChainSelector />
+                  {/* <ChainSelector /> */}
                 </Box>
               )}
 
