@@ -75,18 +75,18 @@ export const PageTabs = () => {
           <Trans>NFTs</Trans>
         </MenuItem>
       )} */}
-      <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
+      {/* <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
         <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Pools</Trans>
         </MenuItem>
-      </Box>
+      </Box> */}
       {/* <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Farm</Trans>
         </MenuItem> */}
-      <MenuItem href="/" dataTestId="pool-nav-link" isActive={false} >
+      <MenuItem href="/stake" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Stake</Trans>
       </MenuItem>
-      <MenuItem href="/" dataTestId="pool-nav-link" isActive={false} >
+      <MenuItem href="/farm" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Farm</Trans>
       </MenuItem>
       {/* <Box marginY={{ sm: '4', md: 'unset' }}>
