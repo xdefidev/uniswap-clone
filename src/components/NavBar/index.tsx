@@ -83,12 +83,12 @@ export const PageTabs = () => {
       {/* <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Farm</Trans>
         </MenuItem> */}
-      <MenuItem href="https://app.testnet.live/stake" dataTestId="pool-nav-link" isActive={false} >
+      <a href="https://app.testnet.live/stake">
         <Trans>Stake</Trans>
-      </MenuItem>
-      <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
+      </a>
+      <a href="https://app.testnet.live/farm" >
         <Trans>Farm</Trans>
-      </MenuItem>
+      </a>
       {/* <Box marginY={{ sm: '4', md: 'unset' }}>
         <MenuDropdown />
       </Box> */}
