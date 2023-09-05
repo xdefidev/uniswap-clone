@@ -86,7 +86,7 @@ export const PageTabs = () => {
       <MenuItem href="https://app.testnet.live/stake" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Stake</Trans>
       </MenuItem>
-      <MenuItem href="https://app.testnet.live//farm" dataTestId="pool-nav-link" isActive={false} >
+      <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Farm</Trans>
       </MenuItem>
       {/* <Box marginY={{ sm: '4', md: 'unset' }}>
