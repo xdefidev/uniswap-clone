@@ -83,10 +83,10 @@ export const PageTabs = () => {
       {/* <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Farm</Trans>
         </MenuItem> */}
-      <MenuItem href="/stake" dataTestId="pool-nav-link" isActive={false} >
+      <MenuItem href="https://app.testnet.live/stake" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Stake</Trans>
       </MenuItem>
-      <MenuItem href="/farm" dataTestId="pool-nav-link" isActive={false} >
+      <MenuItem href="https://app.testnet.live//farm" dataTestId="pool-nav-link" isActive={false} >
         <Trans>Farm</Trans>
       </MenuItem>
       {/* <Box marginY={{ sm: '4', md: 'unset' }}>
