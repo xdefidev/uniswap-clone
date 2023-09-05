@@ -85,7 +85,7 @@ export const PageTabs = () => {
         </MenuItem> */}
       <a href="https://app.testnet.live/stake">
 
-        <MenuItem href="https://app.testnet.live/stake" dataTestId="pool-nav-link" isActive={false} >
+        <MenuItem href="https://app.testnet.live/stake" aria-diabled="true" dataTestId="pool-nav-link" isActive={false} >
           <Trans>Stake</Trans>
         </MenuItem>
 
