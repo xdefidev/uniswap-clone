@@ -84,7 +84,7 @@ export const PageTabs = () => {
           <Trans>Farm</Trans>
         </MenuItem> */}
       <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
-        <a href="https://app.testnet.live/stake" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px", margin: "4px 0px" }}>
+        <a href="https://app.testnet.live/stake" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px", margin: "4px 0px", color: "inherit" }}>
 
           <Trans>Stake</Trans>
 
