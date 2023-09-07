@@ -95,19 +95,20 @@ export const PageTabs = () => {
         </a>
       </Box>
 
+      <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
+        <a href="https://app.testnet.live/farm" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px", color: "inherit" }}>
 
-      <a href="https://app.testnet.live/farm" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px" }}>
-
-        <Trans>Farm</Trans>
-        {/* <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
+          <Trans>Farm</Trans>
+          {/* <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
           
         </MenuItem> */}
-      </a>
+        </a>
 
 
-      {/* <Box marginY={{ sm: '4', md: 'unset' }}>
+        {/* <Box marginY={{ sm: '4', md: 'unset' }}>
         <MenuDropdown />
       </Box> */}
+      </Box>
     </>
   )
 }
