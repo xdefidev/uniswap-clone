@@ -83,7 +83,7 @@ export const PageTabs = () => {
       {/* <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Farm</Trans>
         </MenuItem> */}
-      <a href="https://app.testnet.live/stake" style={{ textDecoration: "none" }}>
+      <a href="https://app.testnet.live/stake" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px" }}>
 
         <Trans>Stake</Trans>
 
