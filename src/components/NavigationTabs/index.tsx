@@ -21,7 +21,7 @@ const Tabs = styled.div`
   justify-content: space-evenly;
 `
 
-const StyledHistoryLink = styled(HistoryLink)<{ flex?: string }>`
+const StyledHistoryLink = styled(HistoryLink) <{ flex?: string }>`
   flex: ${({ flex }) => flex ?? 'none'};
 
   ${({ theme }) => theme.deprecated_mediaWidth.deprecated_upToMedium`
@@ -92,7 +92,7 @@ export function AddRemoveTabs({
           }}
           flex={children ? '1' : undefined}
         >
-          <StyledArrowLeft stroke={theme.textSecondary} />
+          {/* <StyledArrowLeft stroke={theme.textSecondary} /> */}
         </StyledHistoryLink>
         <ThemedText.DeprecatedMediumHeader
           fontWeight={500}
