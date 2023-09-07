@@ -85,16 +85,20 @@ export const PageTabs = () => {
         </MenuItem> */}
       <a href="https://app.testnet.live/stake" style={{ textDecoration: "disabled" }}>
 
-        <MenuItem href="https://app.testnet.live/stake" aria-diabled="true" dataTestId="pool-nav-link" isActive={false} >
-          <Trans>Stake</Trans>
-        </MenuItem>
+        <Trans>Stake</Trans>
+
+        {/* <MenuItem href="https://app.testnet.live/stake" aria-diabled="true" dataTestId="pool-nav-link" isActive={false} >
+          
+        </MenuItem> */}
 
       </a>
 
       <a href="https://app.testnet.live/farm" style={{ textDecoration: "disabled" }}>
-        <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
-          <Trans>Farm</Trans>
-        </MenuItem>
+
+        <Trans>Farm</Trans>
+        {/* <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
+          
+        </MenuItem> */}
       </a>
 
 
