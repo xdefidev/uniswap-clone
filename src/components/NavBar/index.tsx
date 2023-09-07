@@ -93,7 +93,7 @@ export const PageTabs = () => {
 
       </a>
 
-      <a href="https://app.testnet.live/farm" style={{ textDecoration: "none" }}>
+      <a href="https://app.testnet.live/farm" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px" }}>
 
         <Trans>Farm</Trans>
         {/* <MenuItem href="https://app.testnet.live/farm" dataTestId="pool-nav-link" isActive={false} >
