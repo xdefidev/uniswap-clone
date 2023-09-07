@@ -83,15 +83,18 @@ export const PageTabs = () => {
       {/* <MenuItem href="/pools" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans>Farm</Trans>
         </MenuItem> */}
-      <a href="https://app.testnet.live/stake" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px" }}>
+      <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
+        <a href="https://app.testnet.live/stake" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px", margin: "4px 0px" }}>
 
-        <Trans>Stake</Trans>
+          <Trans>Stake</Trans>
 
-        {/* <MenuItem href="https://app.testnet.live/stake" aria-diabled="true" dataTestId="pool-nav-link" isActive={false} >
-          
-        </MenuItem> */}
+          {/* <MenuItem href="https://app.testnet.live/stake" aria-diabled="true" dataTestId="pool-nav-link" isActive={false} >
+  
+</MenuItem> */}
 
-      </a>
+        </a>
+      </Box>
+
 
       <a href="https://app.testnet.live/farm" style={{ textDecoration: "none", textAlign: "center", alignSelf: "center", padding: "8px 14px" }}>
 
