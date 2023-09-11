@@ -27,7 +27,7 @@ export default function TopLevelModals() {
       <AddressClaimModal isOpen={addressClaimOpen} onDismiss={addressClaimToggle} />
       <ConnectedAccountBlocked account={account} isOpen={accountBlocked} />
       <Bag />
-      <UniwalletModal />
+      {/* <UniwalletModal /> */}
       {/* <UniswapWalletBanner /> */}
       <TransactionCompleteModal />
       <AirdropModal />
