@@ -45,8 +45,8 @@ export const openWalletMicrosite = () => {
 
 export function openDownloadApp(element: InterfaceElementName) {
   sendAnalyticsEvent(SharedEventName.ELEMENT_CLICKED, { element })
-  if (isIOS) openAppStore()
-  else openWalletMicrosite()
+  // if (isIOS) openAppStore()
+  // else openWalletMicrosite()
 }
 
 // Launches App Store if on an iOS device, else navigates to Uniswap Wallet microsite
