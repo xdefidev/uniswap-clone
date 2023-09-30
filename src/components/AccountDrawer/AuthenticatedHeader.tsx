@@ -263,7 +263,7 @@ export default function AuthenticatedHeader({ account, openSettings }: { account
           </TraceEvent>
         </IconContainer>
       </HeaderWrapper>
-      <PortfolioDrawerContainer>
+      {/* <PortfolioDrawerContainer>
         {totalBalance !== undefined ? (
           <FadeInColumn gap="xs">
             <ThemedText.HeadlineLarge fontWeight={500} data-testid="portfolio-total-balance">
@@ -347,7 +347,7 @@ export default function AuthenticatedHeader({ account, openSettings }: { account
             <Trans>Claim Uniswap NFT Airdrop</Trans>
           </UNIButton>
         )}
-      </PortfolioDrawerContainer>
+      </PortfolioDrawerContainer> */}
     </AuthenticatedHeaderWrapper>
   )
 }
